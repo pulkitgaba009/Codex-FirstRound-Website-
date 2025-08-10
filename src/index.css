@@ -1,1 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap');
 @import "tailwindcss";
+
+/* rule css */
+.ruleHeadings{
+    @apply font-[Orbitron] text-[#e434e4] [text-shadow:_0_0_.5px_#a934e4,_0_0_1px_#a934e4,_0_0_10px_#a934e4] text-2xl text-left;
+}
+
+.rulePara{
+    @apply font-[Montserrat] text-[#e6dede] [text-shadow:_0_0_.5px_#ffffff,_0_0_1px_#ffffff,_0_0_5px_#ffffff] text-justify ml-8;
+}
+
+/* Scrollbar hidden */
+.scrollbar-hidden {
+  scrollbar-width: none; 
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; 
+}
