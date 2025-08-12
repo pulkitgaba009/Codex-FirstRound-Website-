@@ -1,8 +1,8 @@
 import { Routes,Route } from "react-router-dom";
 import TeamPage from "./Components/TeamPage";
 import Rules from "./Components/Rules";
-import AdminAuth from "./Components/AdminAuth";
-import AdminPannel from "./Components/AdminPannel";
+import AdminAuth from "./Components/Admin/AdminAuth";
+import AdminPannel from "./Components/Admin/AdminPannel";
 
 function App() {
 

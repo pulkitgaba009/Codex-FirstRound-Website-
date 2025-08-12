@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Layout from "./Layout";
+import Layout from "../Layout";
 
 export default function AdminAuth() {
   const [password, setPassword] = useState("");
@@ -11,7 +11,7 @@ export default function AdminAuth() {
     if (password === "Pg@23360900145"){
         nevigate("/adminPannel");
     }else{
-        alert("Not a authentic user !! (Wrong Password)")
+        nevigate("/");
     }
   };
 
