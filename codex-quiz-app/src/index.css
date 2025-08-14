@@ -12,7 +12,7 @@
 
 /* Admin Navbar */
 .adminNavbar{
-  @apply font-[Orbitron] hover:text-[#34d8e4] hover:[text-shadow:_0_0_10px_#34d8e4] 
+  @apply font-[Orbitron] hover:[text-shadow:_0_0_10px_#34d8e4] 
 }
 
 /* Scrollbar hidden */
