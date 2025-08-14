@@ -19,10 +19,10 @@ function TeamPage() {
   return (
     <Layout>
       <div className="w-[100%] bg-[rgba(0,0,0,0.3)] h-[100%] flex flex-col justify-center items-center">
-        <h1 className="font-[Orbitron] text-center text-7xl font-extrabold text-[#34e47b] [text-shadow:_0_0_.5px_#3eeb91,_0_0_1px_#3eeb91,_0_0_10px_#3eeb91] ">
+        <h1 className="font-[Orbitron] text-center text-7xl font-extrabold text-[#34e47b] [text-shadow:_0_0_10px_#3eeb91] ">
           CODE KE BOSS <br /> 2025
         </h1>
-        <h2 className="font=[Montserrat] font-semibold text-4xl text-center text-[#fcf53a] [text-shadow:_0_0_.5px_#FFCC00,_0_0_1px_#FFCC00,_0_0_12px_#FFCC00] mt-6">
+        <h2 className="font=[Montserrat] font-semibold text-4xl text-center text-[#fcf53a] [text-shadow:_0_0_12px_#FFCC00] mt-6">
           THE ULTIMATE CODING BATTLE IS BACK!
         </h2>
 
@@ -37,7 +37,7 @@ function TeamPage() {
           />
           <button
             onClick={() => navigate("/rules")}
-            className="font-[Orbitron] text-[#001f1a] bg-[#16fa8f] mt-5 w-[14rem] mx-auto py-2 text-4xl rounded-2xl [box-shadow:_0_0_.5px_#00FF9E,_0_0_1px_#0FFCB2,_0_0_15px_#00FF9E] hover:bg-[#0fbf6d] cursor-pointer "
+            className="font-[Orbitron] text-[#001f1a] bg-[#16fa8f] mt-5 w-[14rem] mx-auto py-2 text-4xl rounded-2xl [box-shadow:_0_0_15px_#00FF9E] hover:bg-[#0fbf6d] cursor-pointer "
           >
             Start
           </button>
