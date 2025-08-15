@@ -1,6 +1,13 @@
 function QuestionForm({ formData, onChange }) {
+ 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data:", formData);
+  };
+  
   return (
-    <form className="m-4">
+    <form className="m-4"
+    onSubmit={handleSubmit}>
       <label className="label">Question : </label>
       <input
         type="text"
@@ -10,6 +17,7 @@ function QuestionForm({ formData, onChange }) {
         placeholder="Question"
         className="input text-center"
         onFocus={(e) => e.target.value = ""}
+        required
       />
 
       <br /><br />
@@ -23,6 +31,7 @@ function QuestionForm({ formData, onChange }) {
         placeholder="Option A"
         className="input text-center"
         onFocus={(e) => e.target.value = ""}
+        required
       />
 
       <br /><br />
@@ -36,6 +45,7 @@ function QuestionForm({ formData, onChange }) {
         placeholder="Option B"
         className="input text-center"
         onFocus={(e) => e.target.value = ""}
+        required
       />
 
       <br /><br />
@@ -49,6 +59,7 @@ function QuestionForm({ formData, onChange }) {
         placeholder="Option C"
         className="input text-center"
         onFocus={(e) => e.target.value = ""}
+        required
       />
 
       <br /><br />
@@ -62,6 +73,7 @@ function QuestionForm({ formData, onChange }) {
         placeholder="Option D"
         className="input text-center"
         onFocus={(e) => e.target.value = ""}
+        required
       />
 
       <br /><br />
@@ -75,6 +87,7 @@ function QuestionForm({ formData, onChange }) {
         placeholder="Answer"
         className="input text-center"
         onFocus={(e) => e.target.value = ""}
+        required
       />
 
       <br /><br />

@@ -7,7 +7,7 @@ function AdminLayout() {
     <Layout>
       <div className="w-[100%] bg-[rgba(0,0,0,0.2)] h-[100%]">
         <Navbar/>
-          <div className="mt-12">
+          <div className="mt-16">
           <Outlet />
           </div>
       </div>
