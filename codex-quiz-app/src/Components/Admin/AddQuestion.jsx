@@ -4,14 +4,14 @@ import QuestionView from "./QuestionView";
 
 function AddQuestion() {
   const [formData, setFormData] = useState({
-  question: "What is the output of the following C code?",
-  optionA: "45",
-  optionB: "55",
-  optionC: "65",
-  optionD: "75",
-  answer: "55",
-  language: "C",
-  code: `#include <stdio.h>
+    question: "What is the output of the following C code?",
+    optionA: "45",
+    optionB: "55",
+    optionC: "65",
+    optionD: "75",
+    answer: "55",
+    language: "C",
+    code: `#include <stdio.h>
 
 int main() {
     int sum = 0;
@@ -21,7 +21,7 @@ int main() {
     printf("%d", sum);
     return 0;
 }`,
-});
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,9 +34,6 @@ int main() {
   return (
     <div className="box">
       <div className="subDivs w-[60%] mt-4">
-        <h1 className="authHeading">Question View</h1>
-        <hr className="horizontalLine mt-2" />
-
         <QuestionView formData={formData} />
       </div>
 
@@ -44,8 +41,12 @@ int main() {
         <h1 className="authHeading">Enter the Question</h1>
         <hr className="horizontalLine mt-2" />
 
-        <div className="w-full mt-4 h-[85%] overflow-auto scrollbar-hidden px-8">
-          <QuestionForm formData={formData} onChange={handleChange} />
+        <div className="w-full mt-4 h-[87%] overflow-auto scrollbar-hidden px-8">
+          <QuestionForm
+            formData={formData}
+            onChange={handleChange}
+            mode="post"
+          />
         </div>
       </div>
     </div>

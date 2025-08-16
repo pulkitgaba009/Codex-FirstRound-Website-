@@ -35,13 +35,13 @@ function QuizDashboard() {
 
   return (
     <div className="box bg-[rgba(0,0,0,0.2)] flex justify-center items-center">
-      <div className="subDivs h-[53%] px-4 rounded-lg">
+      <div className="subDivs h-[53%] rounded-lg">
         <h1 className="authHeading">Quiz Control Panel</h1>
         <hr className="horizontalLine mt-2" />
         <br />
 
         <form onSubmit={handleSubmit}>
-          <div className="w-full">
+          <div className="w-full px-4">
 
             <label className="label">Quiz Time:</label>
             <input
