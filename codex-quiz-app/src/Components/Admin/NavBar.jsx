@@ -3,12 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 function Navbar() {
   const location = useLocation();
 
-  // Menu items with their paths
   const menuItems = [
     { label: "Quiz Dashboard", path: "/adminPannel" },
     { label: "Add Question", path: "/adminPannel/addQuestion" },
     { label: "Edit Question", path: "/adminPannel/editQuestion" },
-    { label: "Leadboard", path: "/adminPannel/leadboardQuestion" }
+    { label: "Leadboard", path: "/adminPannel/leadboard" }
   ];
 
   return (

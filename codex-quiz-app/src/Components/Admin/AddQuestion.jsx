@@ -46,6 +46,7 @@ int main() {
             formData={formData}
             onChange={handleChange}
             mode="post"
+            isDelete={false}
           />
         </div>
       </div>

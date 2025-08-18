@@ -22,7 +22,7 @@ function App() {
       <Route index element={<QuizDashboard/>}></Route>
       <Route path="addQuestion" element={<AddQuestion/>}></Route>
       <Route path="editQuestion" element={<EditQuestion/>}></Route>
-      <Route path="leadboardQuestion" element={<Leadboard/>}></Route>
+      <Route path="leadboard" element={<Leadboard/>}></Route>
     </Route>
   </Routes>   
    </>
